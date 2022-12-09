@@ -1,9 +1,35 @@
+:root {
+    --text-color: #1B065E;
+    --work-color: #FF6EDA;
+    --about-color: #FF87AB;
+    --footer-color: #FCC8C2;
+    --content-background: #F5ECCD;
+}
+
+body {
+    background-color: var(--content-background);
+}
+
+h2 {
+    color: var(--text-color);
+}
+
+/* nav bar */
+
+.navbar {
+    background-color: var(--about-color);
+    color: var(--text-color);
+}
+
 .nav-item {
     align-self: flex-end;
 }
 
+/* header */
+
 .jumbotron {
-    
+    background-color: var(--footer-color);
+    color: var(--text-color);
 }
 
 #avatar {
@@ -11,3 +37,63 @@
     height: 50px;
 }
 
+/* work */
+
+#work {
+    background-color: var(--content-background);
+    padding: 50px 0px 50px 0px;
+}
+
+
+.card {
+    border: solid 3px black;
+    margin: 10px;
+    background-color: var(--work-color);
+    border-radius: 20px;
+}
+
+.card-img-top {
+    height: 300px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+    object-position: 50% 10%;
+    border-bottom: solid 5px black;
+}
+
+.btn {
+    background-color: var(--text-color);
+}
+
+.btn:hover {
+    background-color: var(--content-background);
+    color: var(--text-color);
+    -webkit-box-shadow: 0px 0px 18px 5px rgba(0, 0, 0, 0.52);
+    -moz-box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.52);
+    box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.52);
+}
+
+/* About me */
+
+#about-me {
+    background-color: var(--about-color);
+    padding: 50px 0px 50px 0px;
+}
+
+/* Footer styles */
+
+footer {
+    padding: 50px 0px 50px 0px;
+    /* change background */
+    background-color: var(--footer-color);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+footer a:hover {
+    color: var(--work-color);
+    text-decoration: none;
+    font-weight: bold;
+}
