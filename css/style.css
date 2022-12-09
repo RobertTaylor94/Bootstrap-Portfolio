@@ -1,13 +1,13 @@
 :root {
     --text-color: #1B065E;
     --work-color: #FF6EDA;
-    --about-color: #FF87AB;
-    --footer-color: #FCC8C2;
-    --content-background: #F5ECCD;
+    --header-color: #FF87AB;
+    --content-color: #FCC8C2;
+    --main-color: #F5ECCD;
 }
 
 body {
-    background-color: var(--content-background);
+    background-color: var(--main-color);
 }
 
 h2 {
@@ -17,7 +17,7 @@ h2 {
 /* nav bar */
 
 .navbar {
-    background-color: var(--about-color);
+    background-color: var(--header-color);
     color: var(--text-color);
 }
 
@@ -28,7 +28,7 @@ h2 {
 /* header */
 
 .jumbotron {
-    background-color: var(--footer-color);
+    background-color: var(--content-color);
     color: var(--text-color);
 }
 
@@ -40,16 +40,21 @@ h2 {
 /* work */
 
 #work {
-    background-color: var(--content-background);
+    background-color: var(--main-color);
     padding: 50px 0px 50px 0px;
 }
 
+.work-row {
+    justify-content: center!important;
+    align-items: center!important;
+}
 
 .card {
     border: solid 3px black;
     margin: 10px;
-    background-color: var(--work-color);
+    background-color: var(--content-color);
     border-radius: 20px;
+    width: 100%;
 }
 
 .card-img-top {
@@ -65,7 +70,7 @@ h2 {
 }
 
 .btn:hover {
-    background-color: var(--content-background);
+    background-color: var(--main-color);
     color: var(--text-color);
     -webkit-box-shadow: 0px 0px 18px 5px rgba(0, 0, 0, 0.52);
     -moz-box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.52);
@@ -75,7 +80,7 @@ h2 {
 /* About me */
 
 #about-me {
-    background-color: var(--about-color);
+    background-color: var(--content-color);
     padding: 50px 0px 50px 0px;
 }
 
@@ -84,7 +89,7 @@ h2 {
 footer {
     padding: 50px 0px 50px 0px;
     /* change background */
-    background-color: var(--footer-color);
+    background-color: var(--header-color);
 }
 
 footer a {
@@ -93,7 +98,8 @@ footer a {
 }
 
 footer a:hover {
-    color: var(--work-color);
+    color: var(--main-color);
     text-decoration: none;
     font-weight: bold;
 }
+
