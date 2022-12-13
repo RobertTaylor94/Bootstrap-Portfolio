@@ -12,7 +12,7 @@ Bootstrap cards allow for the easy displaying of my current completed projects a
 
 Hover effects such as the change in opacity when hovering over a project in widescreen browsers has been enabled using CSS.
 
-<img src="assets/mobile-app.screenshot.PNG" width = "300" height = "600">
+<img src="assets/Screenshot 2022-12-13 at 23.08.06.png" width = "800" height = "800">
 
 ## Deployed Site
 
